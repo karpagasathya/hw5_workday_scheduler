@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     $(".saveBtn").on("click", function () {
+        // referred this link for siblings() https://api.jquery.com/siblings/
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
@@ -25,6 +26,7 @@ $(document).ready(function () {
     function hourTracker() {
         var currentHour = moment().hour();
         $(".time-block").each(function () {
+            // gf https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
             var scheduleHour = parseInt($(this).attr("id").split("hour")[1]);
             console.log(scheduleHour, currentHour);
             if (scheduleHour < currentHour) {
