@@ -53,7 +53,7 @@ $(document).ready(function () {
   function hourTracker() {
     var currentHour = moment().hour();
     $(".time-block").each(function () {
-      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split refered this link for split
       var scheduleHour = parseInt($(this).attr("id").split("hour")[1]);
 
       if (scheduleHour < currentHour) {
