@@ -18,7 +18,7 @@ A simple day planner application that allows the user to save events for each ho
 
 * You'll need to use the Moment.js library to work with date and time.
 
-You can run this Application [here](https://karpagasathya.github.io/hw5_workday_scheduler/)
+You can run this Application [here](https://karpagasathya.github.io/workday_scheduler/)
 
 ## Screenshots
 
