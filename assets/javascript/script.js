@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
   var date = moment().format("LL");
@@ -49,6 +50,7 @@ $(document).ready(function () {
       }
     }
   }
+
 
   function hourTracker() {
     var currentHour = moment().hour();
